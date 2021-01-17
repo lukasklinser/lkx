@@ -5,16 +5,16 @@ date: '2021-01-17'
 
 **“just setting up this site.”** 
 
-… and migrating what I already built in the past. so now it’s somewhat of a personal page with a `posts` /page.
+… and migrating what I already built in the past. so now it’s somewhat of a personal page with a `posts` section.
 
-if you’re reading this: hi! this is free flow writing, it’s also pretty late/early, so excuse any typos.
+if you’re reading this: this is free flow writing, it’s also pretty late/early, so excuse any typos.
 
-i don’t intend for this to become a regular blog or publication, much rather it’s a playground. i like tinkering with technologies, and this helps me become a lot better at it. 
+i don’t intend for this to become a regular blog or publication, much rather it’s a playground. i like tinkering with technologies, and this is an outlet.
 
 **why i’ve set this up:**<br> 
 i love browsing the web and finding people’s writing. there’s so many hidden gems in the `posts` or `blog` or `projects` sections of so many websites, it’s incredible. 
 
-that’s how most people start out, i believe: they just make things they find interesting. and put them on the web somewhere. some then write about it. reading accompanying thoughts allows you to dive deeper. understand motivations, beliefs, plans, struggles. it adds nuance, it adds depth. i love that. because no one starts out as a finished product, and seeing how different projects compound makes people’s journeys a lot more tangible.
+that’s how most people start out, i believe: they just make things they find interesting. and put them on the web somewhere. some then write about it. this allows you to dive deeper. understand motivations, beliefs, plans, struggles. it adds nuance, it adds depth. i love that. because no one starts out as a finished product. seeing different projects compound makes people’s journeys a lot more tangible.
 
 over time, i’ll write about things i find intriguing, have learned, or have built. there likely won’t be a common theme, and that’s the point. setting up a simple website and writing — as long as you don’t let the domain expire – will hopefully live on.
 
