@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  p {
+    margin-top: 16px;
+  }
+}
 
 html,
 body {
@@ -33,4 +38,14 @@ img {
 
 p {
   margin-top: 16px;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 16px;
+  color: #333;
+  /* background: #f3f3f3; 
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 4px; */
 }
