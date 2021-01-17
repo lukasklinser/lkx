@@ -13,7 +13,7 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="lukas klinser, based in berlin."
+          content="hey, i'm lukas."
         />
         <meta
           property="og:image"
