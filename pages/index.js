@@ -80,7 +80,7 @@ export default function Home({ allPostsData }) {
       <section className={utilStyles.headingMd}>
         <Row>
           <Col sm="auto">
-            <a href="https://twitter.com/lukasklinser">twitter ↗</a> 
+            <a href="https://twitter.com/lukasklinser" target="_blank">twitter ↗</a> 
           </Col>
           <Col sm="auto">
             <CopyClipboard></CopyClipboard>
