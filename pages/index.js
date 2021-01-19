@@ -4,6 +4,7 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Date from '../components/date'
 import { getSortedPostsData } from '../lib/posts'
+import CopyClipboard from "../components/copytoclipboard"
 
 import 'bootstrap/dist/css/bootstrap.css';
 import { Container, Row, Col } from "reactstrap";
@@ -73,12 +74,18 @@ export default function Home({ allPostsData }) {
       <Row>
       <Col>  
       <hr></hr> 
-      <section className={utilStyles.headingMLg}>  
+      {/* <section className={utilStyles.headingMLg}>  
       <p>Let's build together →</p>
-      </section>
+          </section> */}
       <section className={utilStyles.headingMd}>
-        <a href="https://twitter.com/lukasklinser">twitter ↗</a>
-        <br></br>
+        <Row>
+          <Col sm="auto">
+            <a href="https://twitter.com/lukasklinser">twitter ↗</a> 
+          </Col>
+          <Col sm="auto">
+            <CopyClipboard></CopyClipboard>
+          </Col>
+        </Row>
       </section>
       </Col>
       </Row>

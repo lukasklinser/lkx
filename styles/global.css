@@ -27,11 +27,16 @@ a {
   color: #212529 !important;
  /* font-weight: 700 !important; */
  border-bottom: 1px solid;
+ cursor: pointer;
 }
 
 a:hover {
-  text-decoration: underline;
-  background-color: #a3a3a3;
+  background-color: #ececec;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+  border-bottom: 0px;
+  cursor: pointer;
+  /* background-color: rgb(236, 193, 250) */
 }
 
 img {
@@ -58,4 +63,8 @@ blockquote {
   color: rgb(102, 102, 102);
   border-left: 4px solid rgb(204, 204, 204);
   padding-left: 20px;
+}
+
+::selection {
+  background: rgb(0, 255, 242);
 }
