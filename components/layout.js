@@ -3,6 +3,10 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
+
+import 'bootstrap/dist/css/bootstrap.css';
+import { Container, Row, Col } from "reactstrap";
+
 const name = 'lkx'
 export const siteTitle = 'lukas playground'
 
@@ -32,7 +36,7 @@ export default function Layout({ children, home }) {
               className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
               alt={name}
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+           {/* <h1 className={utilStyles.heading2Xl}>{name}</h1> */}
           </>
         ) : (
           <>

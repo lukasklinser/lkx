@@ -23,12 +23,15 @@ body {
 }
 
 a {
-  color: #0070f3;
-  text-decoration: none;
+  /* color: #0070f3; */
+  color: #212529 !important;
+ /* font-weight: 700 !important; */
+ border-bottom: 1px solid;
 }
 
 a:hover {
   text-decoration: underline;
+  background-color: #a3a3a3;
 }
 
 img {

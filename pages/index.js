@@ -5,6 +5,9 @@ import Link from 'next/link'
 import Date from '../components/date'
 import { getSortedPostsData } from '../lib/posts'
 
+import 'bootstrap/dist/css/bootstrap.css';
+import { Container, Row, Col } from "reactstrap";
+
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
   return {
@@ -20,18 +23,37 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
+      <Container>
+      <Row>
+        <Col sm="8">
+      <section className={utilStyles.headingXl}>
         <p>Hey, I'm Lukas.</p>
-        <p>
-        I'm currently building and designing things at {' '}
+      </section>
+      <section className={utilStyles.headingMd}>
+        <p>I'm currently building and designing things at {' '}
           <a href="https://hive-logistics.com">Hive ↗</a>, enabling better access to D2C operations.
         </p>
         <p>Before that, I was at {' '}
         <a href="https://n26.com">N26 ↗</a> — building the bank the world loves to use.</p>
         <br></br>
       </section>
+      <section className={utilStyles.headingLg}>
+        <p>Tl;dr →</p>
+      </section>
+      <section className={utilStyles.headingMd}>
+        <p>
+        I believe in simplicity, and in getting the  {' '}
+          <a href="https://www.folklore.org/StoryView.py?project=Macintosh&story=Rosings_Rascals.txt">details ↗</a> right.
+        </p>
+        <p>On weekends I take {' '}
+        <a href="https://instagram.com/theluke.k">photos ↗</a>, like doing sports in and outside the gym, and tinker with technologies and designs.</p>
+        <br></br>
+      </section>
+      </Col>
+      <Col sm="1"></Col>
+      <Col sm="3">
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <h2 className={utilStyles.headingLg}>Words →</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
@@ -46,6 +68,21 @@ export default function Home({ allPostsData }) {
           ))}
         </ul>
       </section>
+      </Col>
+      </Row>
+      <Row>
+      <Col>  
+      <hr></hr> 
+      <section className={utilStyles.headingMLg}>  
+      <p>Let's build together →</p>
+      </section>
+      <section className={utilStyles.headingMd}>
+        <a href="https://twitter.com/lukasklinser">twitter ↗</a>
+        <br></br>
+      </section>
+      </Col>
+      </Row>
+      </Container> 
     </Layout>
   )
 }
