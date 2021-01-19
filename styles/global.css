@@ -68,3 +68,10 @@ blockquote {
 ::selection {
   background: rgb(0, 255, 242);
 }
+
+.two {
+  color: #212529 !important;
+ /* font-weight: 700 !important; */
+ cursor: pointer;
+ text-decoration: none;
+}

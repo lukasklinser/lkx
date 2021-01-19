@@ -59,19 +59,10 @@
     color: #999;
   }
 
-.a {
+.atwo {
   /* color: #0070f3; */
   color: #212529 !important;
  /* font-weight: 700 !important; */
- border-bottom: 1px solid;
  cursor: pointer;
-}
-
-.a:hover {
-  background-color: #ececec;
-  -webkit-transition: 0.1s ease-in;
-  transition: 0.1s ease-in;
-  border-bottom: 0px;
-  cursor: pointer;
-  /* background-color: rgb(236, 193, 250) */
+ text-decoration: none;
 }
