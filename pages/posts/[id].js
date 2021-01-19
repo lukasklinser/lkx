@@ -2,12 +2,15 @@ import Layout from '../../components/layout'
 import Head from 'next/head'
 import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.css'
+import 'bootstrap/dist/css/bootstrap.css';
+import { Container, Row, Col } from "reactstrap";
 
 import { getAllPostIds, getPostData } from '../../lib/posts'
 
 export default function Post({ postData }) {
     return (
       <Layout>
+        <Container style={{ maxWidth: "36rem"}}>
         <Head>
             <title>{postData.title}</title>
         </Head>
@@ -19,6 +22,7 @@ export default function Post({ postData }) {
         <hr></hr>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
+      </Container>
       </Layout>
     )
   }
