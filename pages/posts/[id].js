@@ -10,7 +10,7 @@ import { getAllPostIds, getPostData } from '../../lib/posts'
 export default function Post({ postData }) {
     return (
       <Layout>
-        <Container style={{ maxWidth: "36rem"}}>
+        <Container style={{ maxWidth: "36rem" }}>
         <Head>
             <title>{postData.title}</title>
         </Head>
