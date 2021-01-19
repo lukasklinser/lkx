@@ -51,8 +51,8 @@ class CopyClipboard extends React.Component {
       const { copied } = this.state;
       return (
         <div>
-          <a class="a">
-              <div id="i" class="a" onClick={this.remove}><a onClick={this.copyToClipboard} ref={this.initRef}>me@lukasklinser.com</a></div>
+          <a className="a">
+              <div id="i" className="a" onClick={this.remove}><a onClick={this.copyToClipboard} ref={this.initRef}>me@lukasklinser.com</a></div>
               <ConfettiWrapper><Confetti active={copied} config={config} /></ConfettiWrapper>{copied && <p>Copied! 🎉</p> }
           </a>
         </div>
