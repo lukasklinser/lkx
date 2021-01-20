@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Date from '../components/date'
 import { getSortedPostsData } from '../lib/posts'
 import CopyClipboard from "../components/copytoclipboard"
+import Tooltip from "../components/tooltip"
 
 import 'bootstrap/dist/css/bootstrap.css';
 import { Container, Row, Col } from "reactstrap";
@@ -85,7 +86,7 @@ export default function Home({ allPostsData }) {
             <a href="https://twitter.com/lukasklinser" target="_blank" style={{fontSize: "18px"}}>twitter ↗</a> 
           </Col>
           <Col sm="auto">
-            <CopyClipboard></CopyClipboard>
+            <Tooltip content="Tap to copy" direction="top" className="xsHidden"><CopyClipboard></CopyClipboard></Tooltip>
           </Col>
         </Row>
       </section>

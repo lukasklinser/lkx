@@ -49,7 +49,7 @@ export default function Layout({ children, home }) {
             <Link className="two" href="/">
                 <img
                   src="/images/profile.jpg"
-                  className={`${styles.headerImage} ${utilStyles.borderCircle} ${utilStyles.atwo}`}
+                  className={`${styles.headerHomeImage} ${utilStyles.borderCircle} ${utilStyles.atwo}`}
                   alt={name}
                 />
             </Link>
