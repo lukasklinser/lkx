@@ -75,3 +75,8 @@ blockquote {
  cursor: pointer;
  text-decoration: none;
 }
+
+p:hover {
+  margin-top: 16px;
+  color: #7a7a7a;
+}

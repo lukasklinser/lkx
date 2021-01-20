@@ -33,7 +33,7 @@ export default function Home({ allPostsData }) {
       {/* <section className={utilStyles.headingMd}> */}
       <section>
         <p>I'm currently building and designing things at {' '}
-          <a href="https://hive-logistics.com" target="_blank">Hive ↗</a>, enabling better access to D2C operations.
+          <a href="https://hive-logistics.com" target="_blank">Hive ↗</a>, enabling D2C brands to run their business on autopilot.
         </p>
         <p>Before that, I was at {' '}
         <a href="https://n26.com" target="_blank">N26</a> — building the bank the world loves to use.</p>
@@ -46,10 +46,11 @@ export default function Home({ allPostsData }) {
       <section>
         <p>
         I believe in simplicity, and in getting the  {' '}
-          <a href="https://www.folklore.org/StoryView.py?project=Macintosh&story=Rosings_Rascals.txt" target="_blank">details</a> right.
+          <a href="https://www.folklore.org/StoryView.py?project=Macintosh&story=Rosings_Rascals.txt" target="_blank">details</a> right. 
         </p>
-        <p>On weekends I take {' '}
-        <a href="https://instagram.com/theluke.k" target="_blank">photos</a>, like doing sports in and outside the gym, and tinker with technologies and designs.</p>
+        <p>Love taking {' '}
+        <a href="https://instagram.com/theluke.k" target="_blank">photos</a>, doing sports in and outside the gym (preferably: in the Alps), and writing for the joy of it. Forever trying to catch up on my reading list.</p>
+        <p> Also, tinkering and making things. :) </p>
         <br></br>
       </section>
       </Col>
