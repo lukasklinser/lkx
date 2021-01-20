@@ -31,15 +31,21 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
+          <Container>
+              <Row>
             <img
               src="/images/profile.jpg"
               className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
               alt={name}
             />
+            </Row>
+          </Container>
            {/* <h1 className={utilStyles.heading2Xl}>{name}</h1> */}
           </>
         ) : (
           <>
+          <Container style={{ maxWidth: "36rem" }}>
+              <Row>
             <Link className="two" href="/">
                 <img
                   src="/images/profile.jpg"
@@ -47,11 +53,18 @@ export default function Layout({ children, home }) {
                   alt={name}
                 />
             </Link>
+            </Row>
+            </Container>
+          {/* <Container style={{ maxWidth: "36rem" }}>
+            <Row>
             <h2 className={utilStyles.headingLg}>
               <Link href="/">
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
             </h2>
+            </Row>
+          </Container>
+        */}
           </>
         )}
       </header>

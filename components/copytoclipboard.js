@@ -8,7 +8,7 @@ const config = {
   startVelocity: 40,
   elementCount: 70,
   dragFriction: 0.12,
-  duration: 2000,
+  duration: 3000,
   stagger: 3,
   width: '10px',
   height: '10px',
@@ -52,8 +52,8 @@ class CopyClipboard extends React.Component {
       return (
         <div>
           <a className="a">
-              <div id="i" className="a" onClick={this.remove}><a onClick={this.copyToClipboard} ref={this.initRef}>me@lukasklinser.com</a></div>
-              <ConfettiWrapper><Confetti active={copied} config={config} /></ConfettiWrapper>{copied && <p>Copied! 🎉</p> }
+              <div id="i" className="a" onClick={this.remove}><a onClick={this.copyToClipboard} ref={this.initRef} style={{fontSize: "18px"}}>me@lukasklinser.com</a></div>
+              <ConfettiWrapper><Confetti active={copied} config={config} /></ConfettiWrapper>{copied && <p style={{fontSize: "18px", marginBottom: "0rem"}}>Copied! 🎉</p> }
           </a>
         </div>
       );

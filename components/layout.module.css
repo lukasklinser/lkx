@@ -7,8 +7,8 @@
   .header {
     display: flex;
     flex-direction: column;
-    align-items: left;
-    margin: 3rem auto;
+    align-items: middle;
+    margin: 2rem auto;
   }
   
   .headerImage {

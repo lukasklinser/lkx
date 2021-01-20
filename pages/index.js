@@ -27,48 +27,49 @@ export default function Home({ allPostsData }) {
       <Container>
       <Row>
         <Col sm="8">
-      <section className={utilStyles.headingXl}>
+      <section className={utilStyles.headingLg}>
         <p>Hey, I'm Lukas.</p>
       </section>
-      <section className={utilStyles.headingMd}>
+      {/* <section className={utilStyles.headingMd}> */}
+      <section>
         <p>I'm currently building and designing things at {' '}
-          <a href="https://hive-logistics.com">Hive ↗</a>, enabling better access to D2C operations.
+          <a href="https://hive-logistics.com" target="_blank">Hive ↗</a>, enabling better access to D2C operations.
         </p>
         <p>Before that, I was at {' '}
-        <a href="https://n26.com">N26 ↗</a> — building the bank the world loves to use.</p>
+        <a href="https://n26.com" target="_blank">N26</a> — building the bank the world loves to use.</p>
         <br></br>
       </section>
-      <section className={utilStyles.headingLg}>
+     <section className={utilStyles.headingLg}>
         <p>Tl;dr →</p>
       </section>
-      <section className={utilStyles.headingMd}>
+      {/* <section className={utilStyles.headingMd}> */}
+      <section>
         <p>
         I believe in simplicity, and in getting the  {' '}
-          <a href="https://www.folklore.org/StoryView.py?project=Macintosh&story=Rosings_Rascals.txt">details ↗</a> right.
+          <a href="https://www.folklore.org/StoryView.py?project=Macintosh&story=Rosings_Rascals.txt" target="_blank">details</a> right.
         </p>
         <p>On weekends I take {' '}
-        <a href="https://instagram.com/theluke.k">photos ↗</a>, like doing sports in and outside the gym, and tinker with technologies and designs.</p>
+        <a href="https://instagram.com/theluke.k" target="_blank">photos</a>, like doing sports in and outside the gym, and tinker with technologies and designs.</p>
         <br></br>
       </section>
       </Col>
       <Col sm="1"></Col>
       <Col sm="3">
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Words →</h2>
-        <ul className={utilStyles.list}>
+     {/* <section className={`${utilStyles.headingMd}`}> */}
+        <section className={utilStyles.headingLg}><p>Words →</p></section>
+          <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
               <Link href={`/posts/${id}`}>
-                <a>{title}</a>
+                <a style={{fontSize: "18px"}}>{title}</a>
               </Link>
             <br />
               <small className={utilStyles.lightText}>
-                <Date dateString={date} />
+                <Date dateString={date} style={{fontSize: "18px"}} />
               </small>
             </li>
           ))}
         </ul>
-      </section>
       </Col>
       </Row>
       <Row>
@@ -80,7 +81,7 @@ export default function Home({ allPostsData }) {
       <section className={utilStyles.headingMd}>
         <Row>
           <Col sm="auto">
-            <a href="https://twitter.com/lukasklinser" target="_blank">twitter ↗</a> 
+            <a href="https://twitter.com/lukasklinser" target="_blank" style={{fontSize: "18px"}}>twitter ↗</a> 
           </Col>
           <Col sm="auto">
             <CopyClipboard></CopyClipboard>
