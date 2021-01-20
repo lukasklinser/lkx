@@ -86,7 +86,7 @@ export default function Home({ allPostsData }) {
             <a href="https://twitter.com/lukasklinser" target="_blank" style={{fontSize: "18px"}}>twitter ↗</a> 
           </Col>
           <Col sm="auto">
-            <Tooltip content="Tap to copy" direction="top" className="xsHidden"><CopyClipboard></CopyClipboard></Tooltip>
+            <Tooltip content="Tap to copy" direction="top" className="mdHidden"><CopyClipboard></CopyClipboard></Tooltip>
           </Col>
         </Row>
       </section>
