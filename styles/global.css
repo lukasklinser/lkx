@@ -77,10 +77,10 @@ blockquote {
  text-decoration: none;
 }
 
-p:hover {
+/* p:hover {
   margin-top: 16px;
   color: #7a7a7a;
-}
+} */
 
 :root {
   --tooltip-text-color: white;
