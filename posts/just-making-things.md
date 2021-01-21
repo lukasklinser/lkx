@@ -33,6 +33,6 @@ see you next time 👋
 — lk, jan 17 <br><br>
 
 -----
-→ for reference: this page is built using [next.js](https://nextjs.org/), [tailwind.css](https://tailwindcss.com/), hosted on [github](https://github.com), and deployed to [vercel](https://https://vercel.com/). 
+→ for reference: this page is built using [next.js](https://nextjs.org/), [tailwind.css](https://tailwindcss.com/), hosted on [github](https://github.com), and deployed to [vercel](https://vercel.com/). 
 
 thanks to all the makers that built the foundation for me to create this page on. 
