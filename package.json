@@ -9,8 +9,8 @@
   },
   "dependencies": {
     "@tailwindcss/postcss7-compat": "^2.0.2",
+    "@tailwindcss/typography": "^0.4.0",
     "autoprefixer": "^9.8.6",
-    "bootstrap": "^4.5.3",
     "date-fns": "^2.16.1",
     "gray-matter": "^4.0.2",
     "next": "^10.0.0",
@@ -23,6 +23,7 @@
     "reactstrap": "^8.8.1",
     "remark": "^13.0.0",
     "remark-html": "^13.0.1",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
+    "tailwindcss-selection-variant": "^0.1.0"
   }
 }

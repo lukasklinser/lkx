@@ -14,11 +14,20 @@
   .headerImage {
     width: 4rem;
     height: 4rem;
+    max-width: 72rem;
   }
   
   .headerHomeImage {
     width: 6rem;
     height: 6rem;
+    max-width: 72rem;
+    margin-left: 2rem;
+  }
+
+  .headerHomeImage2 {
+    width: 6rem;
+    height: 6rem;
+    max-width: 72rem;
   }
   
   .backToHome {

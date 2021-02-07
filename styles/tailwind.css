@@ -1,18 +1,39 @@
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 @layer base {
-  p {
-    margin-top: 16px;
+  h1 {
+    @apply text-2xl; 
+    @apply font-bold;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  h3 {
+    @apply text-lg;
+  }
+  a {
+    @apply no-underline;
+  }
+  a:hover {
+    @apply bg-teal-blue;
+  }
+  blockquote {
+    @apply not-italic !important; 
+    @apply text-gray-500 !important;
+    @apply font-normal !important;
   }
 }
 
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
+  background-color: var(--color-background);
+	color: var(--color-primary);
   padding: 0;
   margin: 0;
-  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+  font-family: -apple-system, 'SF Pro Display', BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
@@ -22,13 +43,13 @@ body {
   box-sizing: border-box;
 }
 
-a {
-  /* color: #0070f3; */
+/* a {
+  color: #0070f3;
   color: #212529 !important;
- /* font-weight: 700 !important; */
+ /* font-weight: 700 !important;
  border-bottom: 1px solid;
  cursor: pointer;
-}
+}  */
 
 a:hover {
   background-color: #ececec;
@@ -67,7 +88,7 @@ blockquote {
 }
 
 ::selection {
-  background: rgb(0, 255, 242);
+background: #00fff2;
 }
 
 .two {

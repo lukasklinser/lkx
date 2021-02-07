@@ -26,11 +26,11 @@ putting my writing out for the world to see was something i was never comfortabl
 
 ending this with a quote from creativity, inc. (after ~3 years of wanting to i’ve finally gotten around to reading it)
 
-> "Creativity has to start somewhere, and we are true believers in the power of bracing, candid feedback and the iterative process – reworking, reworking, and reworking again, until a flawed story finds it throughline or a hollow character finds its soul.”
+> Creativity has to start somewhere, and we are true believers in the power of bracing, candid feedback and the iterative process – reworking, reworking, and reworking again, until a flawed story finds it throughline or a hollow character finds its soul.
 
 see you next time 👋
 
-— lk, jan 17 <br><br>
+— lk, jan 17
 
 -----
 → for reference: this page is built using [next.js](https://nextjs.org/), [tailwind.css](https://tailwindcss.com/), hosted on [github](https://github.com), and deployed to [vercel](https://vercel.com/). 

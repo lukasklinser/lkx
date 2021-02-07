@@ -2,9 +2,6 @@ import Head from 'next/head'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
-
-
-import 'bootstrap/dist/css/bootstrap.css';
 import { Container, Row, Col } from "reactstrap";
 
 const name = 'lkx'
@@ -46,10 +43,10 @@ export default function Layout({ children, home }) {
           <>
           <Container style={{ maxWidth: "36rem" }}>
               <Row>
-            <Link className="two" href="/">
+            <Link href="/">
                 <img
                   src="/images/profile.jpg"
-                  className={`${styles.headerHomeImage} ${utilStyles.borderCircle} ${utilStyles.atwo}`}
+                  className={`${styles.headerHomeImage2} ${utilStyles.borderCircle}`}
                   alt={name}
                 />
             </Link>
@@ -72,7 +69,7 @@ export default function Layout({ children, home }) {
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">
-            <a>← Back to home</a>
+            <a class="border-b border-black hover:bg-gray-100 p1">← Back to home</a>
           </Link>
         </div>
       )}
