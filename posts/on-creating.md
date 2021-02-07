@@ -15,7 +15,7 @@ and the dedication section? it’s what keeps them going. at least i’d like to
 
 it’s a view into their darkest hours. and their brightest. maybe some don’t care at all — but it adds nuance for me. 
 
-these lines aren’t well thought through, but Surya’s [tweet ↗](~https://twitter.com/suryaannd/status/1355977324756230144?s=20~) made me think a little bit. don’t we all have something or someone that keeps us going in those moments? don't we also, sometimes, take inspiration from the most random of things? creating is hard, but it’s also incredibly fun. and seeing someone put their heart out and truly come alive is beautiful.
+these lines aren’t well thought through, but Surya’s [tweet ↗](https://twitter.com/suryaannd/status/1355977324756230144?s=20) made me think a little bit. don’t we all have something or someone that keeps us going in those moments? don't we also, sometimes, take inspiration from the most random of things? creating is hard, but it’s also incredibly fun. and seeing someone put their heart out and truly come alive is beautiful.
 
 i’ve tried to take a moment and take in those ~little things~ a bit more consciously recently. this is just one example, but there’s a lot more in everything around us every day. just watch :) 
 
