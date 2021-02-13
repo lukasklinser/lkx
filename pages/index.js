@@ -58,7 +58,7 @@ export default function Home({ allPostsData }) {
   <div class="selection:bg-teal-blue">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-24 max-w-6xl md:m-12 m-4">
 
-      <div class="md:col-span-2">
+      <div class="col md:col-span-2">
           <h1 class="mt-4">Hey, I'm Lukas.</h1>
             <p class="mt-4">I'm currently building and designing things at {' '}
               <a href="https://hive-logistics.com" target="_blank" class="border-b border-black hover:bg-gray-100 p1">Hive ↗</a>, enabling D2C brands to run their business on autopilot.
