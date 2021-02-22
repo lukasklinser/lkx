@@ -4,7 +4,6 @@ module.exports = {
   darkMode: 'class',
   important: true,
   purge: ['./pages/**/*.js', './components/**/*.js'],
-  darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
       transparent: 'transparent',
@@ -51,5 +50,6 @@ module.exports = {
         // …
         'selection',
     ],
+    typography: ['dark'],
   }
 }

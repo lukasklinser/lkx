@@ -1,6 +1,10 @@
 @tailwind base;
 
 @layer base {
+  html {
+    @apply text-base bg-white;
+  }
+
   h1 {
     @apply text-2xl; 
     @apply font-bold;
@@ -15,7 +19,7 @@
     @apply no-underline;
   }
   a:hover {
-    @apply bg-teal-blue;
+    @apply bg-gray-100;
   }
   blockquote {
     @apply not-italic !important; 
@@ -25,39 +29,17 @@
 }
 
 @tailwind components;
-@tailwind utilities;
 
-html,
-body {
-  background-color: var(--color-background);
-	color: var(--color-primary);
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, 'SF Pro Display', BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
-    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  line-height: 1.6;
-  font-size: 18px;
+@layer components {
+  p, ul, ol, li {
+    @apply text-gray-800;
+  }
 }
+
+@tailwind utilities;
 
 * {
   box-sizing: border-box;
-}
-
-/* a {
-  color: #0070f3;
-  color: #212529 !important;
- /* font-weight: 700 !important;
- border-bottom: 1px solid;
- cursor: pointer;
-}  */
-
-a:hover {
-  background-color: #ececec;
-  -webkit-transition: 0.1s ease-in;
-  transition: 0.1s ease-in;
-  border-bottom: 0px;
-  cursor: pointer;
-  /* background-color: rgb(236, 193, 250) */
 }
 
 img {
