@@ -66,6 +66,7 @@ export default function Home({ allPostsData }) {
       <hr class="col md:col-span-3 gap-y-0 mt-4"></hr>
             <div class="max-w-6xl"><a href="https://twitter.com/lukasklinser" target="_blank" class="border-b border-black p1 mr-4">twitter ↗</a> 
             <Tooltip content="Tap to copy" direction="top"><CopyClipboard class="mr-4"></CopyClipboard></Tooltip>
+            <div className='max-w-6xl' style={{color: 'grey', fontSize: '12px'}}>Last updated: Feb 20, 2022</div>
             </div>
 
     </div>
