@@ -9,5 +9,6 @@ tl;dr:
 roadmap:
 * about 
 * work / projects / interests
+* dark mode + keyboard shortcuts
 
 — lk
