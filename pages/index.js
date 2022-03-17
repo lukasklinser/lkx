@@ -42,7 +42,7 @@ export default function Home({ allPostsData }) {
               <a href="https://www.folklore.org/StoryView.py?project=Macintosh&story=Rosings_Rascals.txt" target="_blank" class="border-b-1 p1">details</a> right. 
             </p>
             <p class="mt-4">Love taking {' '}
-              <a href="https://instagram.com/theluke.k" target="_blank" class="border-b border-black p1">photos</a>, doing sports in and outside the gym (preferably: in the Alps), and writing for the joy of it. Forever trying to catch up on my reading list.</p>
+              <a href="https://www.instagram.com/lukask.jpg/" target="_blank" class="border-b border-black p1">photos</a>, doing sports in and outside the gym (preferably: in the Alps), and writing for the joy of it. Forever trying to catch up on my reading list.</p>
             <p class="mt-4 mb-0"> Also, tinkering and making things. :) </p>
       </div>
 
