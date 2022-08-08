@@ -31,10 +31,9 @@ export default function Home({ allPostsData }) {
       <div class="col md:col-span-2">
           <h1 class="mt-4">Hey, I'm Lukas.</h1>
             <p class="mt-4">I'm currently building and designing things at {' '}
-              <class="p1">hive.app ↗, enabling D2C brands to run their business on autopilot.
-            </p>
+              hive.app ↗, enabling D2C brands to run their business on autopilot.</p>
             <p class="mt-4">Before that, I was at {' '}
-              <class="p1">N26</a> — building the bank the world loves to use.</p>
+              N26 — building the bank the world loves to use.</p>
             <br></br>
           <h1 class="mt-4">Tl;dr →</h1>
             <p class="mt-4">
