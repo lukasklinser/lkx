@@ -38,6 +38,7 @@
 
 @tailwind utilities;
 
+
 * {
   box-sizing: border-box;
 }
@@ -79,11 +80,6 @@ background: #00fff2;
  cursor: pointer;
  text-decoration: none;
 }
-
-/* p:hover {
-  margin-top: 16px;
-  color: #7a7a7a;
-} */
 
 :root {
   --tooltip-text-color: white;

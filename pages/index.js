@@ -30,8 +30,8 @@ export default function Home({ allPostsData }) {
 
       <div class="col md:col-span-2">
           <h1 class="mt-4">Hey, I'm Lukas.</h1>
-            <p class="mt-4">I'm currently building and designing things at {' '}
-              hive.app ↗, enabling D2C brands to run their business on autopilot.</p>
+            <div class="mt-4">I'm currently building and designing things at {' '}
+              hive.app ↗, enabling D2C brands to run their business on autopilot.</div>
             <p class="mt-4">Before that, I was at {' '}
               N26 — building the bank the world loves to use.</p>
             <br></br>

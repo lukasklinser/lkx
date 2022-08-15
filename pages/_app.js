@@ -1,5 +1,5 @@
 // \import '../styles/global.css'
-// import "tailwindcss/tailwind.css";
+import "tailwindcss/tailwind.css";
 import '../styles/tailwind.css'
 //import { ThemeProvider } from 'next-themes'
 
