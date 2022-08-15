@@ -90,6 +90,8 @@ background: #00fff2;
   --tooltip-background-color: black;
   --tooltip-margin: 30px;
   --tooltip-arrow-size: 6px;
+  --background: white;
+  --foreground: black;
 }
 
 /* Wrapping */
@@ -176,4 +178,9 @@ background: #00fff2;
   top: 50%;
   transform: translateX(0) translateY(-50%);
   border-left-color: var(--tooltip-background-color);
+}
+
+[data-theme='dark'] {
+  --background: black;
+  --foreground: white;
 }
