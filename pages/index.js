@@ -29,7 +29,7 @@ export default function Home({ allPostsData }) {
     <div class="grid grid-cols-1 md:grid-cols-3 gap-x-24 gap-y-8 max-w-6xl md:m-12 m-4">
 
       <div class="col md:col-span-2">
-          <h1 class="mt-4">Hey, I'm Lukas.</h1>
+          <h1 class="mt-4">Hey, I'm Lukas</h1>
             <div class="mt-4">I'm currently building and designing things at {' '}
               hive.app ↗, enabling D2C brands to run their business on autopilot.</div>
             <p class="mt-4">Before that, I was at {' '}
