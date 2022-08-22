@@ -64,7 +64,7 @@ export default function Layout({ children, home }) {
         <div>
           {/* className={styles.backToHome}> */}
           <Link href="/">
-            <a class="border-b border-black dark:border-white dark:text-white hover:bg-gray-100 p1">← Back to home</a>
+            <a class="border-b border-black dark:border-white dark:text-white hover:bg-gray-100 mx-4">← Back to home</a>
           </Link>
         </div>
       )}

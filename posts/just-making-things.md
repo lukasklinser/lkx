@@ -32,7 +32,8 @@ see you next time 👋
 
 — lk, jan 17
 
------
-→ for reference: this page is built using [next.js](https://nextjs.org/), [tailwind.css](https://tailwindcss.com/), hosted on [github](https://github.com), and deployed to [vercel](https://vercel.com/). 
+<hr class="mt-8"></hr>
 
-thanks to all the makers that built the foundation for me to create this page on. 
+→ for reference: this page is built using [next.js](https://nextjs.org/), [tailwind.css](https://tailwindFpcss.com/), hosted on [github](https://github.com), and deployed to [vercel](https://vercel.com/). 
+
+<div class="mb-8">thanks to all the makers that built the foundation for me to create this page on.</div>
