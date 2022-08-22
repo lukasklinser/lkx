@@ -15,7 +15,7 @@ export default function Post({ postData }) {
         <Head>
             <title>{postData.title}</title>
         </Head>
-        <article class="prose pr-4 pl-4">
+        <article class="pr-4 pl-4">
         <h2> {/*className={utilStyles.headingLg}*/}{postData.title}</h2>
         <div class="text-gray-500"> {/*className={utilStyles.lightText}*/}
           <Date dateString={postData.date} />

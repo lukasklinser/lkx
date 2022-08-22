@@ -20,11 +20,11 @@ export async function getStaticProps() {
 
 export default function Home({ allPostsData }) {
   return (
-    <Layout home>
+<Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <Container>
+<div class="max-w-72 p-4 mx-8 my-24">
   <div class="selection:bg-teal-blue">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-x-24 gap-y-8 max-w-6xl md:m-12 m-4">
 
@@ -32,16 +32,16 @@ export default function Home({ allPostsData }) {
           <h1 class="mt-4">Hey, I'm Lukas</h1>
             <div class="mt-4">I'm currently building and designing things at {' '}
               hive.app ↗, enabling D2C brands to run their business on autopilot.</div>
-            <p class="mt-4">Before that, I was at {' '}
-              N26 — building the bank the world loves to use.</p>
+            <div class="mt-4">Before that, I was at {' '}
+              N26 — building the bank the world loves to use.</div>
             <br></br>
           <h1 class="mt-4">Tl;dr →</h1>
-            <p class="mt-4">
+            <div class="mt-4">
               I believe in simplicity, and in getting the  {' '}
               <a href="https://www.folklore.org/StoryView.py?project=Macintosh&story=Rosings_Rascals.txt" target="_blank" class="border-b-1 p1">details</a> right. 
-            </p>
-            <p class="mt-4">Love taking {' '}
-              <a href="https://www.instagram.com/lukask.jpg/" target="_blank" class="border-b border-black p1">photos</a>, doing sports in and outside the gym (preferably: in the Alps), and writing for the joy of it. Forever trying to catch up on my reading list.</p>
+            </div>
+            <div class="mt-4">Love taking {' '}
+              <a href="https://www.instagram.com/lukask.jpg/" target="_blank" class="border-b border-black p1">photos</a>, doing sports in and outside the gym (preferably: in the Alps), and writing for the joy of it. Forever trying to catch up on my reading list.</div>
             <div class="mt-4 mb-0"> Also, tinkering and making things. :) </div>
       </div>
 
@@ -70,7 +70,7 @@ export default function Home({ allPostsData }) {
 
     </div>
   </div>
-      </Container> 
-    </Layout>
+  </div>
+</Layout>
   )
 }

@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
+// import styles from './layout.module.css'
+// import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import { Container, Row, Col } from "reactstrap";
 
@@ -9,7 +9,8 @@ export const siteTitle = 'lukas playground'
 
 export default function Layout({ children, home }) {
   return (
-    <div className={styles.container}>
+    // container
+    <div class="max-w-72 p-4 mx-8 my-24">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -25,14 +26,16 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
+      <div class="flex-col align-middle m-8">
+      {/* // className={styles.header} */}
         {home ? (
           <>
           <Container>
               <Row>
             <img
               src="/images/profile.jpg"
-              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
+              class="w-16 h-16 max-w-72"
+              // className={`${styles.headerHomeImage}`}
               alt={name}
             />
             </Row>
@@ -46,30 +49,22 @@ export default function Layout({ children, home }) {
             <Link href="/">
                 <img
                   src="/images/profile.jpg"
-                  className={`${styles.headerHomeImage2} ${utilStyles.borderCircle}`}
+                  class="w-16 h-16 max-w-72"
+                  // className={`${styles.headerHomeImage2}`}
                   alt={name}
                 />
             </Link>
             </Row>
             </Container>
-          {/* <Container style={{ maxWidth: "36rem" }}>
-            <Row>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
-              </Link>
-            </h2>
-            </Row>
-          </Container>
-        */}
           </>
         )}
-      </header>
+      </div>
       <main>{children}</main>
       {!home && (
-        <div className={styles.backToHome}>
+        <div>
+          {/* className={styles.backToHome}> */}
           <Link href="/">
-            <a class="border-b border-black hover:bg-gray-100 p1">← Back to home</a>
+            <a class="border-b border-black dark:border-white dark:text-white hover:bg-gray-100 p1">← Back to home</a>
           </Link>
         </div>
       )}
