@@ -24,9 +24,8 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-<div class="max-w-72 p-4 mx-8 my-0">
   <div class="selection:bg-teal-blue">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-x-24 gap-y-8 max-w-6xl md:m-12 m-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-x-24 gap-y-8">
 
       <div class="col md:col-span-2">
           <h1 class="mt-4">Hey, I'm Lukas</h1>
@@ -65,11 +64,10 @@ export default function Home({ allPostsData }) {
       <hr class="col md:col-span-3 gap-y-0 mt-4"></hr>
             <div class="max-w-6xl"><a href="https://twitter.com/lukasklinser" target="_blank" class="border-b border-black p1 mr-4">twitter ↗</a> 
             <Tooltip content="Tap to copy" direction="top"><CopyClipboard class="mr-4"></CopyClipboard></Tooltip>
-            <div class="max-w-6 text-gray-400 text-xs">Last updated: Aug 15, 2022</div>
+            <div class="max-w-6 text-gray-400 text-xs">Last updated: Aug 22, 2022</div>
             </div>
 
     </div>
-  </div>
   </div>
 </Layout>
   )

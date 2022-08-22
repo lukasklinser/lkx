@@ -78,7 +78,7 @@ background: #00fff2;
 }
 
 [data-theme='dark'] {
-  --background: slate-900;
+  --background: black;
   --foreground: white;
 }
 

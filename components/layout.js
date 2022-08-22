@@ -10,7 +10,7 @@ export const siteTitle = 'lukas playground'
 export default function Layout({ children, home }) {
   return (
     // container
-    <div class="max-w-72 p-4 mx-8 my-0">
+    <div class="p-4 max-w-full my-0">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -26,7 +26,7 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <div class="flex-col align-middle m-8">
+      <div class="flex-col align-middle">
       {/* // className={styles.header} */}
         {home ? (
           <>
@@ -34,7 +34,7 @@ export default function Layout({ children, home }) {
               <Row>
             <img
               src="/images/profile.jpg"
-              class="w-16 h-16 max-w-72 mx-14 my-8"
+              class="w-24 h-24"
               // className={`${styles.headerHomeImage}`}
               alt={name}
             />
@@ -44,12 +44,12 @@ export default function Layout({ children, home }) {
           </>
         ) : (
           <>
-          <Container style={{ maxWidth: "36rem" }}>
+          <Container>
               <Row>
             <Link href="/">
                 <img
                   src="/images/profile.jpg"
-                  class="w-16 h-16 max-w-72"
+                  class="w-24 h-24"
                   // className={`${styles.headerHomeImage2}`}
                   alt={name}
                 />
