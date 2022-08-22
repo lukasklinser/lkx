@@ -12,7 +12,7 @@ export default function Layout({ children, home }) {
     // container
     // <div class="p-4 max-w-full my-0">
     // <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-5xl mx-auto h-auto px-4 sm:px-6 lg:px-8">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
