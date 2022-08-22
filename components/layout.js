@@ -10,7 +10,7 @@ export const siteTitle = 'lukas playground'
 export default function Layout({ children, home }) {
   return (
     // container
-    <div class="max-w-72 p-4 mx-8 my-24">
+    <div class="max-w-72 p-4 mx-8 my-0">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -34,7 +34,7 @@ export default function Layout({ children, home }) {
               <Row>
             <img
               src="/images/profile.jpg"
-              class="w-16 h-16 max-w-72"
+              class="w-16 h-16 max-w-72 mx-14 my-8"
               // className={`${styles.headerHomeImage}`}
               alt={name}
             />

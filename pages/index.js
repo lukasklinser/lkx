@@ -24,7 +24,7 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-<div class="max-w-72 p-4 mx-8 my-24">
+<div class="max-w-72 p-4 mx-8 my-0">
   <div class="selection:bg-teal-blue">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-x-24 gap-y-8 max-w-6xl md:m-12 m-4">
 
