@@ -34,6 +34,4 @@ see you next time 👋
 
 <hr class="mt-8"></hr>
 
-→ for reference: this page is built using [next.js](https://nextjs.org/), [tailwind.css](https://tailwindFpcss.com/), hosted on [github](https://github.com), and deployed to [vercel](https://vercel.com/). 
-
-<div class="mb-8">thanks to all the makers that built the foundation for me to create this page on.</div>
+→ for reference: this page is built using [next.js](https://nextjs.org/), [tailwind.css](https://tailwindFpcss.com/), hosted on [github](https://github.com), and deployed to [vercel](https://vercel.com/).<br>

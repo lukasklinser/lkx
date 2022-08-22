@@ -10,7 +10,9 @@ export const siteTitle = 'lukas playground'
 export default function Layout({ children, home }) {
   return (
     // container
-    <div class="p-4 max-w-full my-0">
+    // <div class="p-4 max-w-full my-0">
+    // <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -31,10 +33,10 @@ export default function Layout({ children, home }) {
         {home ? (
           <>
           <Container>
-              <Row>
+              <Row>  
             <img
               src="/images/profile.jpg"
-              class="w-24 h-24"
+              class="w-24 h-24 mt-8 mb-4"
               // className={`${styles.headerHomeImage}`}
               alt={name}
             />
@@ -49,7 +51,7 @@ export default function Layout({ children, home }) {
             <Link href="/">
                 <img
                   src="/images/profile.jpg"
-                  class="w-24 h-24"
+                  class="w-24 h-24 mt-8 mb-4"
                   // className={`${styles.headerHomeImage2}`}
                   alt={name}
                 />
@@ -61,10 +63,10 @@ export default function Layout({ children, home }) {
       </div>
       <main>{children}</main>
       {!home && (
-        <div>
+        <div class="my-4">
           {/* className={styles.backToHome}> */}
           <Link href="/">
-            <a class="border-b border-black dark:border-white dark:text-white hover:bg-gray-100 mx-4">← Back to home</a>
+            <a class="border-b border-black dark:border-white dark:text-white hover:bg-gray-100">← Back to home</a>
           </Link>
         </div>
       )}
