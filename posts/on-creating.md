@@ -19,8 +19,8 @@ these lines aren’t well thought through, but Surya’s [tweet ↗](https://twi
 
 i’ve tried to take a moment and take in those ~little things~ a bit more consciously recently. this is just one example, but there’s a lot more in everything around us every day. just watch :) 
 
-— feb 1, 00:37
+— feb 1, 00:37<br>
 
----
+<hr class="mt-8"></hr>
 
 <div class="justify-items-center"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Reminding myself ↓<br><br>The more I create, the more inspired I am. The less I create, the less inspired I am.</p>&mdash; Surya Anand (@suryaannd) <a href="https://twitter.com/suryaannd/status/1355977324756230144?ref_src=twsrc%5Etfw">January 31, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
