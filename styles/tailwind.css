@@ -19,7 +19,7 @@
   }
   blockquote {
     @apply not-italic !important; 
-    @apply text-gray-500 !important;
+    @apply text-gray-400 !important;
     @apply font-normal !important;
   }
 }
@@ -75,6 +75,11 @@ background: #00fff2;
   --tooltip-arrow-size: 6px;
   --background: white;
   --foreground: black;
+}
+
+[data-theme='dark'] {
+  --background: slate-900;
+  --foreground: white;
 }
 
 /* Wrapping */

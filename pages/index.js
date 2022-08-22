@@ -31,7 +31,7 @@ export default function Home({ allPostsData }) {
       <div class="col md:col-span-2">
           <h1 class="mt-4">Hey, I'm Lukas</h1>
             <div class="mt-4">I'm currently building and designing things at {' '}
-              hive.app ↗, enabling D2C brands to run their business on autopilot.</div>
+              <a href="https://angel.co/company/hivetechnologies" target="_blank">hive.app</a> ↗, enabling D2C brands to run their business on autopilot.</div>
             <div class="mt-4">Before that, I was at {' '}
               N26 — building the bank the world loves to use.</div>
             <br></br>
@@ -65,7 +65,7 @@ export default function Home({ allPostsData }) {
       <hr class="col md:col-span-3 gap-y-0 mt-4"></hr>
             <div class="max-w-6xl"><a href="https://twitter.com/lukasklinser" target="_blank" class="border-b border-black p1 mr-4">twitter ↗</a> 
             <Tooltip content="Tap to copy" direction="top"><CopyClipboard class="mr-4"></CopyClipboard></Tooltip>
-            <div className='max-w-6xl' style={{color: 'grey', fontSize: '12px'}}>Last updated: Aug 15, 2022</div>
+            <div class="max-w-6 text-gray-400 text-xs">Last updated: Aug 15, 2022</div>
             </div>
 
     </div>
