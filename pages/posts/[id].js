@@ -1,21 +1,17 @@
+import Layout from '../../components/layout'
 import Head from 'next/head'
 import Link from 'next/link'
 import Date from '../../components/date'
+import { Container, Row, Col } from "reactstrap";
 
 import { getAllPostIds, getPostData } from '../../lib/posts'
 
 export default function Post({ postData }) {
     return (
       <div class="flex items-center justify-center">
-      {/* <Layout> */}
-        {/* <Container> */}
-        <div class="max-w-prose mx-auto px-4 sm:px-6 lg:px-8">
-        <Link href="/">
-                <img
-                  src="/images/profile.jpg"
-                  class="w-24 h-24 mt-8 mb-4"
-                />
-            </Link>
+      <Layout>
+        <Container>
+        <div class="max-w-prose mx-auto">
         <div class="selection:bg-teal-blue">
         <Head>
             <title>{postData.title}</title>
@@ -29,14 +25,9 @@ export default function Post({ postData }) {
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
       </div>
-      {/* </Container> */}
-      {/* </Layout> */}
-        <div class="my-4">
-          <Link href="/">
-            <a class="border-b border-black dark:border-white dark:text-white hover:bg-gray-100">← Back to home</a>
-          </Link>
-        </div>
       </div>
+      </Container>
+       </Layout>
       </div>
     )
   }

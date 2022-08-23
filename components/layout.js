@@ -1,3 +1,4 @@
+import { max } from 'date-fns';
 import Head from 'next/head'
 import Link from 'next/link'
 import { Container, Row, Col } from "reactstrap";
@@ -38,7 +39,7 @@ export default function Layout({ children, home }) {
           </>
         ) : (
           <>
-          <Container>
+          <Container style={{ display: 'flex',  justifyContent:'left', alignItems:'center', maxWidth: "36rem" }}>
               <Row>
             <Link href="/">
                 <img
