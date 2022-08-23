@@ -7,7 +7,7 @@ export const siteTitle = 'lukas playground'
 
 export default function Layout({ children, home }) {
   return (
-    <div class="max-w-5xl mx-auto h-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta

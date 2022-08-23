@@ -7,18 +7,17 @@ module.exports = {
     "./pages/index.js",
   ],
   important: true,
-  purge: ['./pages/**/*.js', './components/**/*.js'],
   theme: {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
       black: colors.black,
       white: colors.white,
-      gray: colors.blueGray,
+      gray: colors.slate,
       indigo: colors.indigo,
       red: colors.rose,
       yellow: colors.amber,
-      blue: colors.lightBlue,
+      blue: colors.sky,
       violet: colors.violet
     },
     fontFamily: {
