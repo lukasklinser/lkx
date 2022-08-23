@@ -1,6 +1,4 @@
 import Head from 'next/head'
-// import styles from './layout.module.css'
-// import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import { Container, Row, Col } from "reactstrap";
 
@@ -9,9 +7,6 @@ export const siteTitle = 'lukas playground'
 
 export default function Layout({ children, home }) {
   return (
-    // container
-    // <div class="p-4 max-w-full my-0">
-    // <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="max-w-5xl mx-auto h-auto px-4 sm:px-6 lg:px-8">
       <Head>
         <link rel="icon" href="/favicon.ico" />
@@ -29,7 +24,6 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <div class="flex-col align-middle">
-      {/* // className={styles.header} */}
         {home ? (
           <>
           <Container>
@@ -37,12 +31,10 @@ export default function Layout({ children, home }) {
             <img
               src="/images/profile.jpg"
               class="w-24 h-24 mt-8 mb-4"
-              // className={`${styles.headerHomeImage}`}
               alt={name}
             />
             </Row>
           </Container>
-           {/* <h1 className={utilStyles.heading2Xl}>{name}</h1> */}
           </>
         ) : (
           <>
@@ -52,7 +44,6 @@ export default function Layout({ children, home }) {
                 <img
                   src="/images/profile.jpg"
                   class="w-24 h-24 mt-8 mb-4"
-                  // className={`${styles.headerHomeImage2}`}
                   alt={name}
                 />
             </Link>
@@ -64,7 +55,6 @@ export default function Layout({ children, home }) {
       <main>{children}</main>
       {!home && (
         <div class="my-4">
-          {/* className={styles.backToHome}> */}
           <Link href="/">
             <a class="border-b border-black dark:border-white dark:text-white hover:bg-gray-100">← Back to home</a>
           </Link>
