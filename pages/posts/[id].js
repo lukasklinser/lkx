@@ -10,13 +10,13 @@ export default function Post({ postData }) {
     return (
       <div class="flex items-center justify-center">
       <Layout>
-        <Container>
+      <Container style={{ display: 'flex',  justifyContent:'left', alignItems:'center', maxWidth: "36rem" }}>
         <div class="max-w-prose mx-auto">
         <div class="selection:bg-teal-blue">
         <Head>
             <title>{postData.title}</title>
         </Head>
-        <article class="mt-8">
+        <article class="mt-4">
             <h2>{postData.title}</h2>
         <div class="text-gray-400 dark:text-gray-200">
           <Date dateString={postData.date} />
