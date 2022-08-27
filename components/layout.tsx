@@ -1,12 +1,20 @@
 import { max } from 'date-fns';
 import Head from 'next/head'
+import Image from 'next/image'
 import Link from 'next/link'
 import { Container, Row, Col } from "reactstrap";
 
 const name = 'lkx'
 export const siteTitle = 'lukas playground'
 
-export default function Layout({ children, home }) {
+export default function Layout({ 
+  children, 
+  home 
+}: {
+  children: React.ReactNode
+  home?:boolean
+})
+{
   return (
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       <Head>
