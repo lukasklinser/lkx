@@ -11,3 +11,4 @@ tl;dr:
 * hotkeys + navigation
 * more writing (i.e. publish private notes)
 * play with more technologies i haven't played with yet :) 
+    * ~~move to TypeScript~~
