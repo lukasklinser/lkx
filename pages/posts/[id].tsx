@@ -1,27 +1,35 @@
 import Layout from '../../components/layout'
+import { getAllPostIds, getPostData } from '../../lib/posts'
 import Head from 'next/head'
 import Link from 'next/link'
 import Date from '../../components/date'
 import { Container, Row, Col } from "reactstrap";
+import { GetStaticProps, GetStaticPaths } from 'next'
 
-import { getAllPostIds, getPostData } from '../../lib/posts'
-
-export default function Post({ postData }) {
+export default function Post({ 
+  postData 
+}: {
+  postData: {
+    title: string
+    date: string
+    contentHtml: string
+  }
+}) {
     return (
-      <div class="flex items-center justify-center">
+      <div className="flex items-center justify-center">
       <Layout>
       <Container style={{ display: 'flex',  justifyContent:'left', alignItems:'center', maxWidth: "36rem" }}>
-        <div class="max-w-prose mx-auto">
-        <div class="selection:bg-teal-blue">
+        <div className="mx-auto max-w-prose">
+        <div className="selection:bg-teal-blue">
         <Head>
             <title>{postData.title}</title>
         </Head>
-        <article class="mt-4">
+        <article className="mt-4">
             <h2>{postData.title}</h2>
-        <div class="text-gray-400 dark:text-gray-200">
+        <div className="text-gray-400 dark:text-gray-200">
           <Date dateString={postData.date} />
         </div>
-        <hr class="mt-4 mb-4"></hr>
+        <hr className="mt-4 mb-4"></hr>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
       </div>
@@ -32,7 +40,7 @@ export default function Post({ postData }) {
     )
   }
 
-export async function getStaticPaths() {
+export const getStaticPaths: GetStaticPaths = async () => {
     const paths = getAllPostIds()
     return {
       paths,
@@ -40,8 +48,8 @@ export async function getStaticPaths() {
     }
 }
 
-export async function getStaticProps({ params }) {
-  const postData = await getPostData(params.id)
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const postData = await getPostData(params.id as string)
   return {
     props: {
       postData

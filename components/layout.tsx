@@ -1,14 +1,22 @@
 import { max } from 'date-fns';
 import Head from 'next/head'
+import Image from 'next/image'
 import Link from 'next/link'
 import { Container, Row, Col } from "reactstrap";
 
 const name = 'lkx'
 export const siteTitle = 'lukas playground'
 
-export default function Layout({ children, home }) {
+export default function Layout({ 
+  children, 
+  home 
+}: {
+  children: React.ReactNode
+  home?:boolean
+})
+{
   return (
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -24,14 +32,14 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <div class="flex-col align-middle">
+      <div className="flex-col align-middle">
         {home ? (
           <>
           <Container>
               <Row>  
             <img
               src="/images/profile.jpg"
-              class="w-24 h-24 mt-8 mb-4"
+              className="w-24 h-24 mt-8 mb-4"
               alt={name}
             />
             </Row>
@@ -44,7 +52,7 @@ export default function Layout({ children, home }) {
             <Link href="/">
                 <img
                   src="/images/profile.jpg"
-                  class="w-24 h-24 mt-8 mb-4"
+                  className="w-24 h-24 mt-8 mb-4"
                   alt={name}
                 />
             </Link>
@@ -55,9 +63,9 @@ export default function Layout({ children, home }) {
       </div>
       <main>{children}</main>
       {!home && (
-        <div class="my-4">
+        <div className="my-4">
           <Link href="/">
-            <a class="border-b border-black dark:border-white dark:text-white hover:bg-gray-100">← Back to home</a>
+            <a className="border-b border-black dark:border-white dark:text-white hover:bg-gray-100">← Back to home</a>
           </Link>
         </div>
       )}
