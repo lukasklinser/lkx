@@ -5,21 +5,20 @@ import Date from '../components/date'
 import { getSortedPostsData } from '../lib/posts'
 import CopyClipboard from "../components/copytoclipboard"
 import Tooltip from "../components/tooltip"
-import { GetStaticProps, GetStaticPaths, GetServerSideProps } from 'next';
+import { GetStaticProps } from 'next';
 import { Container, Row, Col } from "reactstrap";
 import { useEffect, useState } from "react";
 
-export const getStaticProps: GetStaticProps = async (context) => {
-// export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
-  return {
-    props: {
-      allPostsData
-    }
-  }
-}
 
-export default function Home({ allPostsData }) {
+export default function Home({ 
+  allPostsData 
+}: {
+  allPostsData: {
+    date: string
+    title: string
+    id: string
+  }[]
+}) {
   return (
 <Layout home>
       <Head>
@@ -73,3 +72,13 @@ export default function Home({ allPostsData }) {
 </Layout>
   )
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+  // export async function getStaticProps() {
+    const allPostsData = getSortedPostsData()
+    return {
+      props: {
+        allPostsData
+      }
+    }
+  }
