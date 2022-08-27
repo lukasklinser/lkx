@@ -16,7 +16,7 @@ export default function Post({
   }
 }) {
     return (
-      <div class="flex items-center justify-center">
+      <div className="flex items-center justify-center">
       <Layout>
       <Container style={{ display: 'flex',  justifyContent:'left', alignItems:'center', maxWidth: "36rem" }}>
         <div class="max-w-prose mx-auto">
