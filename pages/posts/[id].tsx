@@ -19,17 +19,17 @@ export default function Post({
       <div className="flex items-center justify-center">
       <Layout>
       <Container style={{ display: 'flex',  justifyContent:'left', alignItems:'center', maxWidth: "36rem" }}>
-        <div class="max-w-prose mx-auto">
-        <div class="selection:bg-teal-blue">
+        <div className="mx-auto max-w-prose">
+        <div className="selection:bg-teal-blue">
         <Head>
             <title>{postData.title}</title>
         </Head>
-        <article class="mt-4">
+        <article className="mt-4">
             <h2>{postData.title}</h2>
-        <div class="text-gray-400 dark:text-gray-200">
+        <div className="text-gray-400 dark:text-gray-200">
           <Date dateString={postData.date} />
         </div>
-        <hr class="mt-4 mb-4"></hr>
+        <hr className="mt-4 mb-4"></hr>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
       </div>
@@ -49,7 +49,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const postData = await getPostData(params.id)
+  const postData = await getPostData(params.id as string)
   return {
     props: {
       postData
