@@ -65,7 +65,7 @@ export default function Layout({
       {!home && (
         <div className="my-4">
           <Link href="/">
-            <a className="border-b border-black dark:border-white dark:text-white hover:bg-gray-100">← Back to home</a>
+            <a className="border-b border-black dark:border-white dark:text-white hover:bg-gray-100 hover:dark:bg-gray-700">← Back to home</a>
           </Link>
         </div>
       )}
