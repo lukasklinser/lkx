@@ -28,7 +28,7 @@ export default function Home({
       <div className="col md:col-span-2">
           <h1 className="mt-4">Hey, I'm Lukas</h1>
             <div className="mt-4">I'm currently building and designing things at {' '}
-              <a href="https://angel.co/company/hivetechnologies" target="_blank">hive.app</a> ↗, enabling D2C brands to run their business on autopilot.</div>
+              <a href="https://angel.co/company/hivetechnologies" target="_blank" className="border-b border-black dark:border-gray-200 p1">hive.app</a> ↗, enabling D2C brands to run their business on autopilot.</div>
             <div className="mt-4">Before that, I was at {' '}
               N26 — building the bank the world loves to use.</div>
             <br></br>
@@ -38,7 +38,7 @@ export default function Home({
               <a href="https://www.folklore.org/StoryView.py?project=Macintosh&story=Rosings_Rascals.txt" target="_blank" className="border-b-1 p1">details</a> right. 
             </div>
             <div className="mt-4">Love taking {' '}
-              <a href="https://www.instagram.com/lukask.jpg/" target="_blank" className="border-b border-black p1">photos</a>, doing sports in and outside the gym (preferably: in the Alps), and writing for the joy of it. Forever trying to catch up on my reading list.</div>
+              <a href="https://www.instagram.com/lukask.jpg/" target="_blank" className="border-b border-black dark:border-gray-200 p1">photos</a>, doing sports in and outside the gym (preferably: in the Alps), and writing for the joy of it. Forever trying to catch up on my reading list.</div>
             <div className="mt-4 mb-0"> Also, tinkering and making things. :) </div>
       </div>
 
@@ -49,7 +49,7 @@ export default function Home({
                 {allPostsData.map(({ id, date, title }) => (
                   <li key={id}>
                     <Link href={`/posts/${id}`}>
-                      <a className="border-b border-black p1">{title}</a>
+                      <a className="border-b border-black dark:border-gray-200 p1">{title}</a>
                     </Link>
                     <p className="pb-6 pr-6 mt-0 text-sm text-gray-400">
                       <Date dateString={date} />
@@ -60,7 +60,7 @@ export default function Home({
           </div>
       </div>
       <hr className="mt-4 col md:col-span-3 gap-y-0"></hr>
-            <div className="max-w-6xl"><a href="https://twitter.com/lukasklinser" target="_blank" className="mr-4 border-b border-black p1">twitter ↗</a> 
+            <div className="max-w-6xl"><a href="https://twitter.com/lukasklinser" target="_blank" className="mr-4 border-b border-black dark:border-gray-200 p1">twitter ↗</a> 
             <Tooltip content="Tap to copy" direction="top"><CopyClipboard class="mr-4"></CopyClipboard></Tooltip>
             <div className="mb-4 text-xs text-gray-400 max-w-6">Last updated: Aug 27, 2022</div>
             </div>
