@@ -31,6 +31,7 @@ export default function Layout({
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/40830132?v=4" />
       </Head>
       <div className="flex-col align-middle">
         {home ? (
