@@ -5,8 +5,9 @@ import Date from '../components/date'
 import { getSortedPostsData } from '../lib/posts'
 import CopyClipboard from "../components/copytoclipboard"
 import Tooltip from "../components/tooltip"
-import { GetStaticProps } from 'next';
-
+import { GetStaticProps, NextApiRequest, NextApiResponse } from 'next'
+import LastUpdated from '../components/LastUpdated'
+import getConfig from "next/config";
 
 export default function Home({ 
   allPostsData 
@@ -18,6 +19,7 @@ export default function Home({
   }[]
 }) {
   return (
+
 <Layout home>
       <Head>
         <title>{siteTitle}</title>
@@ -60,9 +62,10 @@ export default function Home({
           </div>
       </div>
       <hr className="mt-4 col md:col-span-3 gap-y-0"></hr>
+
             <div className="max-w-6xl"><a href="https://twitter.com/lukasklinser" target="_blank" className="mr-4 border-b border-black dark:border-gray-200 p1">twitter ↗</a> 
             <Tooltip content="Tap to copy" direction="top"><CopyClipboard class="mr-4"></CopyClipboard></Tooltip>
-            <div className="mb-4 text-xs text-gray-400 max-w-6">Last updated: Aug 27, 2022</div>
+            <div className="mb-4 text-xs text-gray-400 max-w-6"> <LastUpdated /> </div>
             </div>
 
     </div>

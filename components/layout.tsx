@@ -63,7 +63,7 @@ export default function Layout({
       </div>
       <main>{children}</main>
       {!home && (
-        <div className="my-4">
+        <div className="my-16">
           <Link href="/">
             <a className="border-b border-black dark:border-white dark:text-white hover:bg-gray-100 hover:dark:bg-gray-700">← Back to home</a>
           </Link>
