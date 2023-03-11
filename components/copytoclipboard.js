@@ -52,7 +52,7 @@ class CopyClipboard extends React.Component {
       return (
         <div>
           <a className="a">
-              <div id="i" className="a" onClick={this.remove}><a onClick={this.copyToClipboard} ref={this.initRef} class="mt-4 underline hover:bg-gray-100 hover:dark:bg-gray-700 p1">me@lukasklinser.com</a></div>
+              <div id="i" className="a" onClick={this.remove}><a onClick={this.copyToClipboard} ref={this.initRef} class="mt-4 hover:bg-gray-100 hover:dark:bg-gray-700 p1">me@lukasklinser.com</a></div>
               <ConfettiWrapper><Confetti active={copied} config={config} /></ConfettiWrapper>{copied && <p style={{marginBottom: "0rem"}}>Copied! 🎉</p> }
           </a>
         </div>

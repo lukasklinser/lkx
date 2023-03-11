@@ -24,9 +24,6 @@ module.exports = {
       serif: ['serif']
     },
     extend: {
-      colors: {
-        'teal-blue': '#00fff2',
-      },
       typography: {
           css: {
             blockquote: {

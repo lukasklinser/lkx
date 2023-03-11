@@ -3,17 +3,20 @@
 @layer base {
   h1 {
     @apply text-2xl; 
-    @apply font-bold;
+    @apply font-semibold;
   }
   h2 {
     @apply text-xl;
+    @apply font-semibold;
+    @apply mt-8;
   }
   h3 {
     @apply text-lg;
+    @apply font-semibold;
+    @apply mt-8;
   }
   a {
-    @apply no-underline;
-  }
+    @apply border-b border-black dark:border-gray-200;  }
   a:hover {
     @apply bg-gray-100 dark:bg-gray-700;
   }
@@ -21,6 +24,13 @@
     @apply not-italic !important; 
     @apply text-gray-400 !important;
     @apply font-normal !important;
+  }
+  ul {
+    @apply list-disc;
+    @apply list-inside;
+  }
+  h5 {
+    @apply font-semibold;
   }
 }
 
@@ -41,7 +51,7 @@ p {
 
 code {
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  color: rgb(200, 36, 255);
+  color: #c824ff;
   font-size: 0.95em;
 }
 
@@ -53,10 +63,11 @@ blockquote {
   padding-left: 20px;
 }
 
-::selection {
+/* ::selection {
 background: #00fff2;
 }
-
+ */
+ 
 .two {
   color: #212529 !important;
  cursor: pointer;
