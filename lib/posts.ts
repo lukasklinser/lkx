@@ -54,16 +54,19 @@ export async function getPostData(id: string) {
   // Use gray-matter to parse the post metadata section
   const matterResult = matter(fileContents)
 
-    // Use remark to convert markdown into HTML string
-    const processedContent = await remark()
+  // Use remark to convert markdown into HTML string
+  const processedContent = await remark()
     .use(html)
     .process(matterResult.content)
-    const contentHtml = processedContent.toString()  
+  const contentHtml = processedContent.toString()
+
+  // Modify external links to open in new tabs
+  const modifiedContentHtml = contentHtml.replace(/href="(https?:\/\/.+?)"/g, 'target="_blank" rel="noopener noreferrer" href="$1"')
 
   // Combine the data with the id
   return {
     id,
-    contentHtml,
+    contentHtml: modifiedContentHtml,
     ...(matterResult.data as { date: string; title: string })
   }
 }

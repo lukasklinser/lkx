@@ -47,11 +47,11 @@ export default function Home({
       <div className="h-auto md:col">
           <h1 className="mt-4">Words →</h1>
             <div className="mt-4">
-              <ul>
+              <ul className="list-none">
                 {allPostsData.map(({ id, date, title }) => (
                   <li key={id}>
                     <Link href={`/posts/${id}`}>
-                      <a className="border-b border-black dark:border-gray-200 p1">{title}</a>
+                      <a>{title}</a>
                     </Link>
                     <p className="pb-6 pr-6 mt-0 text-sm text-gray-400">
                       <Date dateString={date} />
