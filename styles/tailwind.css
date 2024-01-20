@@ -50,9 +50,9 @@ p {
 }
 
 code {
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  color: #c824ff;
-  font-size: 0.95em;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;  ;
+  @apply bg-gray-100 dark:bg-gray-700;
+  font-size: 0.9em;
 }
 
 blockquote {
