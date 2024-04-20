@@ -30,7 +30,7 @@ export default function Home({
           <div className="col md:col-span-2">
             <h1 className="mt-4">Hey, I'm Lukas</h1>
             <div className="mt-4">I'm currently building and designing things at {' '}
-              <a href="https://angel.co/company/hivetechnologies" target="_blank" className="border-b border-black dark:border-gray-200 p1">hive.app</a> ↗, creating the operations cockpit for e-commerce brands.</div>
+              <a href="https://angel.co/company/hivetechnologies" target="_blank" className="border-b border-black dark:border-gray-200 p1">hive.app</a> ↗, creating the leading operations platform for independent commerce.</div>
             <div className="mt-4">Before that, I was at {' '}
               N26 — building the bank the world loves to use.</div>
             <br></br>
